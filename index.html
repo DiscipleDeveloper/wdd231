@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase courses for Web and Computer programming Certicficate">
+    <meta name="author" content="Napoleon B. Tumale">
+    <title>Web and Computer Programming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/web-programming-logo.svg" alt="Web and programming logo." width="60" height="60">
+            <p>Napoleon Tumale<br>Web & Programming Certification</p>
+        </div>
+        <button id="nav-button" aria-label="navigation" class="nav-button">
+        </button>
+    </header>
+    <nav>
+        <ul>
+            <li class="wayfinding"><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber Project</a></li>
+            <li><a href="final.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit impedit vero est. Tempora natus ipsum fuga! Consequatur asperiores architecto alias. Enim voluptate qui aliquam, ratione commodi excepturi inventore cumque ipsam!</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/napoleon-tumale.webp" alt="Napoleon Tumale Photo at the temple." width="50" height="75">
+        </section>
+        <section class="web-certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="course">
+                <button id="all-courses" class="all-courses">All COURSES</button>
+                <button id="cse-courses" class="cse-courses">CSE COURSES</button>
+                <button id="wdd-courses" class="wdd-courses">WDD COURSES</button>
+            </div>
+            <div class="subject">
+                
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-icons">
+            <img src="images/github-logo.svg" alt="Github Logo" width="46" height="46">
+            <img src="images/linkedin-logo.svg" alt="Linkedin Logo" width="46" height="46">
+            <img src="images/fb-logo.svg" alt="Facebook Logo" width="46" height="46">
+            <img src="images/insta-logo.svg" alt="Instagram Logo" width="46" height="46">
+        </div>
+        <div class="footer-notes">
+            <p>&copy<span id="yearNow"></span> 🏰 Napoleon B. Tumale 🏰 Philippines</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

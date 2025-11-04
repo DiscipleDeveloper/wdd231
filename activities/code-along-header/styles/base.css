@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #000084;
+    --secondary-color: #202A25;
+    --accent-color: #F9F5E3;
+    --heading-font: "DM Serif Text", serif;
+    --body-font: "Merriweather", serif;
+}
+
+* {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px var(--secondary-color);
+    column-gap: 8px;
+    align-items: end;
+
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+header span {
+    font-size:  1.2rem;
+    color: var(--primary-color);
+}
+
+.hamburger {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+    
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--secondary-color);
+    text-align: center;
+}
+
+.navigation li.current {
+    background-color: var(--accent-color);
+}
+
+h1 {
+    margin-left: 1rem;
+    
+}
+
+.navigation li:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.navigation a:hover{
+    color: var(--accent-color);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--accent-color);
+    height: 80px;
+}
+
+.footer-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--primary-color);
+    padding: .7rem;
+    border-radius: 22px;
+}
+
+.footer-icons img {
+    width: 22px;
+    height: 22px;
+}
+
+.footer-icons a:hover {
+    background-color: rgb(87, 87, 180);
+    color: var(--accent-color);
+}
