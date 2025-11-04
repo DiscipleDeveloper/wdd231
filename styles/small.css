@@ -148,7 +148,8 @@ section {
 .footer-icons {
     display: flex;
     justify-self: center;
-    margin: 1rem 0;
+    margin: 1rem;
+    gap: 1.3rem;
 
 }
 
