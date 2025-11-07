@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #FCBF49;
+    --secondary-color: #582707;
+    --accent-color: #1B4079;
+    --white-shade: #faf9f6;
+    --dark-shade: #1a2a40;
+    --heading-font: "DM Serif Text", serif;
+    --body-font: "Merriweather", serif;
+    --body-font-size: clamp(.88rem, 2vw, 1rem);
+    --yellow-shadow: 1px 1px 2px rgb(150, 121, 39);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--dark-shade);
+    font-style: var(--body-font);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.2rem;
+    font-family: var(--heading-font);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+#cards section {
+    text-align: center;
+    border: solid 2px var(--primary-color);
+    border-radius: 3px;
+    padding: 2rem;
+    background-color: rgb(249, 248, 246);
+    margin-top: 2rem;
+
+}
+
+#cards img {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px #999;
+    width: 280px;
+    height: auto;
+    
+
+}
+
+footer {
+    text-align: center;
+    margin: 4rem;
+}

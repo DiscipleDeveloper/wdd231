@@ -1,0 +1,12 @@
+{
+    "Tumale": {
+        "date": "November 14, 1995",
+        "familyMembers": 11,
+        "bishopVisit": true,
+        "data": {
+            "name": "Napoleon",
+            "gender": "male",
+            "birthdate": "September 29, 1950"
+        }
+    }
+}
