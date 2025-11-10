@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #71B340;
+    --secondary-color: #775144;
+    --accent-color: #FAA916;
+    --white-shade: #faf9f6;
+    --dark-shade: #1a2a40;
+    --heading-font: "DM Serif Text", serif;
+    --heading-color: #11270B;
+    --body-font: "Merriweather", serif;
+    --body-font-size: clamp(.9rem, 2vw, 1.1rem);
+    --yellow-shadow: 1px 1px 2px rgb(25, 126, 67);
+}
+
+
+
+@media screen and (min-width: 705px) {
+
+    header {
+            width: 100%;
+            height: auto;
+            background-color: var(--primary-color);
+            box-shadow: var(--yellow-shadow);
+            margin-bottom: 4rem;
+        }
+
+    .header-contents {
+        box-shadow: none;
+    }
+    
+    nav ul {
+        display: flex;
+        position: absolute;
+        top: .1rem;
+        right: .5rem;
+    }
+
+        nav a {
+            font-size: 1rem;
+        }
+
+    .ham-button {
+        display: none;
+    }
+
+
+
+
+
+
+}

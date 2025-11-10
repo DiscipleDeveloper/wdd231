@@ -1,0 +1,53 @@
+{ 
+    "members": [
+    {
+        "name": "Jollibee",
+        "address": "Greenfield Agro Supply Purok 3, Barangay Villa Cruz, San Mateo, Isabela",
+        "url": "https://order.jollibee.com/en/ph/stores/jollibee-san-mateo-isabela",
+        "brandLogo": "https://images.seeklogo.com/logo-png/48/1/jollibee-logo-png_seeklogo-484698.png",
+        "membershipLvl": 1
+    },
+    {
+        "name": "Mang Inasal",
+        "address": "North Valley Hardware & Lumber Riverside Road, Barangay Bagong Sikat, San Mateo, Isabela",
+        "url": "https://www.manginasal.ph/",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mang_Inasal.svg/790px-Mang_Inasal.svg.png?20200712183642",
+        "membershipLvl": 2
+    },
+    {
+        "name": "Andoks",
+        "address": "Sunridge Medical & Wellness Clinic Corner Mabini Street and Lopez Avenue, Barangay San Marcos, San Mateo, Isabela",
+        "url": "https://restaurantguru.com/Andoks-San-Mateo-Isabela-San-Mateo-Cagayan-Valley",
+        "brandLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-HfvlRxvvAS6r6yWj1CBKqBFlfca7V8ITKA&s",
+        "membershipLvl": 3
+    },
+    {
+        "name": "Bright English Speakers Tutorial Center",
+        "address": "Golden Harvest Mini Mart Km 421 National Highway, Barangay Sinamar Norte, San Mateo, Isabela",
+        "url": "https://discipledeveloper.github.io/wdd131/project/brightenglishspeakers.html",
+        "brandLogo": "https://discipledeveloper.github.io/wdd131/project/images/bright-english-logo.svg",
+        "membershipLvl": 1
+    },
+    {
+        "name": "Mr. DIY",
+        "address": "Twin Pines Café & Bakery Aurora Street, Barangay Sta. Cruz, San Mateo, Isabela",
+        "url": "https://www.mrdiy.com/",
+        "brandLogo": "https://sa.kapamilya.com/absnews/abscbnnews/media/2021/business/02/01/20210201-mr-diy-logo.jpg?ext=.jpg",
+        "membershipLvl": 2
+    },
+    {
+        "name": "Seven Eleven",
+        "address": "East Horizon Learning Center Rivera Compound, Purok 5, Barangay Malasin, San Mateo, Isabela",
+        "url": "https://www.7-eleven.com.ph/",
+        "brandLogo": "https://images.contentstack.io/v3/assets/blt79dc99fad342cc45/bltaea3ad03c180ee64/633f08d845693810d212c437/7_Eleven_Horizontal_2022_RGB_thumb_1639377127_8824.png",
+        "membershipLvl": 3
+    },
+    {
+        "name": "Landbank",
+        "address": "Peakline Fitness Center Bonifacio Extension, Barangay San Mateo Centro, San Mateo, Isabela",
+        "url": "https://www.landbank.com/",
+        "brandLogo": "https://images.gmanews.tv/webpics/2021/12/landbank_logo_2021_12_12_18_42_13.jpg",
+        "membershipLvl": 3
+    }
+    ]
+ }
