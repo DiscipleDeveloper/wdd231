@@ -19,6 +19,12 @@
     
 }
 
+header,
+footer,
+.companies {
+    min-width: 320px;
+}
+
 .header-contents,
 main,
 .footer {
@@ -32,9 +38,6 @@ main,
     box-shadow: var(--yellow-shadow);
     
 }
-
-
-
 
 .icon {
     padding: .5rem;
@@ -94,32 +97,51 @@ nav a:hover {
     border: none;
 }
 
-footer {
-    background-color: var(--accent-color);
-    box-shadow: 1px -1px 2px orange;
-    min-height: 100px;
-}
-
-
 .footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(90px auto);
     font-size: var(--body-font-size);
     padding: 2rem;
     text-align: center;
-    align-items: center;
+    align-items: start;
+    gap: 1rem;
+    background-color: var(--accent-color);
+    box-shadow: 1px -1px 2px orange;
     
 }
 
 .footer div {
     margin: 1rem;
+    min-height: 90px;
 }   
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 
 .footer-icons img {
     width: 54px;
-    height: auto;
+    height: 54px;
+    aspect-ratio: 1/1;
+    display: block;
+    object-fit: contain;
 }
 
+.footer-dates p,
+.footer-contact p,
+.footer-title {
+    min-height: 1.3rem;
+    line-height: 1.3;
+}
+
+#lastModified {
+    min-height: 1.3rem;
+    display: block;
+    white-space: nowrap;
+}
 
 #grid,
 #list {

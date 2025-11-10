@@ -42,7 +42,11 @@
         display: none;
     }
 
-
+    footer {
+    box-shadow: 1px -1px 2px orange;
+    min-width: 705px;
+    background-color: var(--accent-color);
+}
 
 
 
