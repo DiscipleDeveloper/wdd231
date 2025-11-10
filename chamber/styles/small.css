@@ -16,7 +16,10 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--dark-shade);
-    
+}
+
+body {
+    background-color: var(--white-shade);
 }
 
 header,
