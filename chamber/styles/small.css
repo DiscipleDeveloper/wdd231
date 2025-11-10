@@ -42,6 +42,12 @@ main,
     
 }
 
+#wayfinding {
+    background-color: var(--heading-color);
+    color: var(--white-shade);
+    border-radius: 7px;
+}
+
 .icon {
     padding: .5rem;
 }
