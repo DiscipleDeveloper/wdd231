@@ -177,22 +177,22 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
-    section {
-        display: grid;
-        grid-template-columns: .75fr 1.5fr 1.5fr 1fr;
-        padding: 1rem;
-        align-items: center;
-        text-align: center;
-    }
-
-    section h3 {
-        text-align: left;
-    }
-
-
-    img {
-        display: none;
-    }
-
 }
+
+.list section {
+    display: grid;
+    grid-template-columns: .75fr 1.5fr 1.5fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.list section h3 {
+    text-align: left;
+}
+
+
+.list img {
+    display: none;
+}
+
