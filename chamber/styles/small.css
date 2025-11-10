@@ -97,6 +97,7 @@ nav a:hover {
 footer {
     background-color: var(--accent-color);
     box-shadow: 1px -1px 2px orange;
+    min-height: 100px;
 }
 
 
@@ -112,9 +113,9 @@ footer {
 
 .footer div {
     margin: 1rem;
-}
+}   
 
-.footer img {
+.footer-icons img {
     width: 54px;
     height: auto;
 }
@@ -169,9 +170,6 @@ footer {
     height: 70px;
     width: auto;
 }
-
-
-
 
 .list {
     display: flex;
