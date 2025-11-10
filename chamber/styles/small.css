@@ -214,10 +214,16 @@ nav a:hover {
     padding: 1rem;
     align-items: center;
     text-align: center;
+    min-width: 0;
 }
 
 .list section h3 {
     text-align: left;
+}
+
+.list section p {
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
 
 
