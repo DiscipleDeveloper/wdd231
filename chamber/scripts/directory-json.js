@@ -28,8 +28,8 @@ function displayMember(members) {
         let logo = document.createElement("img");
         logo.setAttribute("src", member.brandLogo);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "64");
-        logo.setAttribute("height", "64");
+        logo.setAttribute("width", "70");
+        logo.setAttribute("height", "70");
         logo.setAttribute("alt", "Logo of a member company");
         
         let mType;

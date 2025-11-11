@@ -22,6 +22,11 @@ body {
     background-color: var(--white-shade);
 }
 
+h1 {
+    text-align: center;
+    color: var(--heading-color);
+    text-shadow: 1px 1px 1px var(--primary-color);
+}
 header,
 footer,
 .companies {
@@ -118,6 +123,7 @@ nav a:hover {
     background-color: var(--accent-color);
     box-shadow: 1px -1px 2px orange;
     
+    min-height: 180px;
 }
 
 .footer div {
@@ -132,11 +138,12 @@ nav a:hover {
 }
 
 .footer-icons img {
-    width: 54px;
-    height: 54px;
     aspect-ratio: 1/1;
     display: block;
     object-fit: contain;
+
+    width: 54px;
+    height: 54px;
 }
 
 .footer-dates p,
@@ -148,8 +155,6 @@ nav a:hover {
 
 #lastModified {
     min-height: 1.3rem;
-    display: block;
-    white-space: nowrap;
 }
 
 #grid,
@@ -185,6 +190,7 @@ nav a:hover {
     padding: 1.5rem;
     border-radius: 7px;
     transition: 0.2s ease;
+    min-height: 140px;
 }
 
 .companies section:hover {
@@ -200,6 +206,8 @@ nav a:hover {
 .companies img {
     height: 70px;
     width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .list {
