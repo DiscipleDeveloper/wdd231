@@ -53,14 +53,12 @@ main,
     border-radius: 7px;
 }
 
-.icon {
-    padding: .5rem;
-}
 
 .icon {
     display: flex;
     align-items: center;
-    gap: .2rem
+    gap: .2rem;
+    padding: .5rem;
 }
 
 .icon p {
