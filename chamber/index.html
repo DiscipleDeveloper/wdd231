@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Mateo, Isabela Chamber of Commerce Home Page</title>
+    <meta name="description" content="Home Page for Chamber of Commerce in San Mateo, Isabela">
+    <meta name="author" content="Napoleon B. Tumale">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Homepage = San Mateo, Isabela Facebook">
+    <meta property="og:description"
+        content="View of Hometown of San Mateo, Isabela. A place where all the business from the directory is located. A place that entrepreneurs can start their business fresh.">
+    <meta property="og:image" content="https://discipledeveloper.github.io/wdd231/chamber/images/og-image.webp">
+    <meta property="og:url" content="https://www.facebook.com/agrifits.lgu.sanmateoisabela">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-contents">
+            <div class="icon">
+                <img src="images/chamber-logo.svg" alt="Chamber of commerce logo" width="44" height="44">
+                <p>San Mateo, Isabela<br>Chamber of Commerce</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="wayfinding">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button aria-label="menu" class="ham-button"></button>
+
+    </header>
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <source srcset="images/hero-wide.webp" media="(max-width: 705px)">
+            <img src="images/hero-wider.webp" alt="Photo of Urban San Mateo, Isabela AI generated.">
+        </picture>
+        <div class="hero-title">
+        <p>San Mateo, Isabela Chamber of Commerce</p>
+        <button>Join Now</button>
+        </div>
+        
+    
+    </section>
+
+    <main>
+        <h1>Chamber Home Page</h1>
+        <div class="events">
+            <h2>Annual Major Events</h2>
+            <div class="event-cards">
+              <section>
+                <img src="images/mung-beans-event.webp" alt="Mung beans in a bowl." loading="lazy" width="400" height="400">
+                <h3>Balatong Festival</h3>
+                <p class="event-date">May 7-10, 2025</p>
+                <p>Mung beans is the prominent product of San Mateo labeled as "Black Gold". This is the best time to gether with local business and make network to develop entrepeneur's aspirations.</p>
+              </section>
+              <section>
+                <img src="images/flag-event.webp" alt="Flag of the Philippines raised on a pole." loading="lazy" width="400" height="400">
+                <h3>Buwan Ng Wika</h3>
+                <p class="event-date">August 2025</p>
+                <p>Buwan ng wika or Month of Language is a month that comemorates Filipino language heritage with different variety of programs such as singing contests, cooking, trade and many more. While many activities involved it's strictly follows the rule of using only Filipino aspects in every category.</p>
+              </section>
+              <section>
+                <img src="images/farm-event.webp" alt="A farm in one of the hometowns of the Philippines." loading="lazy" width="400" height="400">
+                <h3>National Farmers Day</h3>
+                <p class="event-date">Jan 22, 2025</p>
+                <p>Around 43 percent of the San Mateo area is farm. This day is focused to find innovative ways to further the improvement of agriculture systems involving businesses that fit the need of the town.</p>
+              </section>
+            </div>
+        </div>
+
+        <div class="weather">
+            <h2>San Mateo Weather</h2>
+            <div class="weather-container">
+                <section>
+                    <h3>Today</h3>
+                    <img id="icon-today" width="100" height="100">
+                    <p id="weather-now-status"></p>
+                    <p id="weather-now"></p>
+
+                </section>
+
+                <div id="days-weather">
+                    <section id="day-one"></section>
+                    <section id="day-two"></section>
+                    <section id="day-three"></section>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Business of the Decade Spotlight!</h2>
+            <div  class="spotlight"></div>
+        </div>
+
+        
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-contact">
+                <p class="footer-title">San Mateo, Isabela Chamber of Commerce</p>
+                <p>#8 Luna Street<br>San Mateo, Isabela Philippines<br>napoleont14@gmail.com<br>(+63)905-739-2901</p>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/groups/240678412705045"><img src="images/fb-logo.svg"
+                        alt="Logo of facebook." width="54" height="54" loading="lazy"></a>
+                <a href="https://www.instagram.com/san_mateo_isabela/"><img src="images/insta-logo.svg"
+                        alt="Logo of instagram." width="54" height="54" loading="lazy"></a>
+                <a href="https://www.linkedin.com/in/napoleon-tumale-a14628354/"><img src="images/linkedin-logo.svg"
+                        alt="Logo of Linkedin." width="54" height="54" loading="lazy"></a>
+            </div>
+            <div class="footer-dates">
+                <p>WDD231 Class Project<br>Napoleon B. Tumale</p>
+                <p>&copy;<span id="year-now">2025</span> San Mateo, Isabela Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

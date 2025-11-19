@@ -1,15 +1,18 @@
-const companies = document.querySelector(".companies");
+const spotlight = document.querySelector(".spotlight");
 
 async function getMemberData() {
     const response = await fetch("data/members.json");
     const data = await response.json();
 
-    console.table(data.members);
-    displayMember(data.members)
+    let filteredMembers = data.members.filter(member => [2, 3].includes(member.membershipLvl));
+    let spotlightMembers = filteredMembers.sort(() => Math.random() - 0.5).slice(0, 2);   
+
+    console.table(spotlightMembers);
+    displayMember(spotlightMembers)
+
 }
 
 getMemberData()
-
 
 function displayMember(members) {
     members.forEach(member => {
@@ -17,6 +20,9 @@ function displayMember(members) {
 
         let name = document.createElement("h3");
         name.textContent = member.name;
+
+        let phoneNo = document.createElement("p");
+        phoneNo.textContent = member.phone;
 
         let address = document.createElement("p");
         address.textContent = `Address: ${member.address}`;
@@ -30,7 +36,7 @@ function displayMember(members) {
         logo.setAttribute("width", "70");
         logo.setAttribute("height", "70");
         logo.setAttribute("alt", "Logo of a member company");
-        
+
         let mType;
         if (member.membershipLvl === 1) {
             mType = `Standard`;
@@ -49,26 +55,11 @@ function displayMember(members) {
 
         memberCard.appendChild(logo);
         memberCard.appendChild(name);
+        memberCard.appendChild(phoneNo);
         memberCard.appendChild(address);
         memberCard.appendChild(website);
         memberCard.appendChild(membership);
 
-        companies.appendChild(memberCard);
+        spotlight.appendChild(memberCard);
     })
 }
-
-const list = document.querySelector("#list");
-const grid = document.querySelector("#grid");
-const gridDesign = document.querySelector(".companies");
-
-
-list.addEventListener("click", () => {
-    gridDesign.classList.add("list");
-})
-
-grid.addEventListener("click", () => {
-    gridDesign.classList.remove("list");
-})
-
-
-

@@ -9,11 +9,14 @@
             height: auto;
             background-color: #71B340;
             box-shadow: 1px 1px 2px rgb(25, 126, 67);
-            margin-bottom: 4rem;
+            margin-bottom: 1.211px;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
     .header-contents {
         box-shadow: none;
+        
     }
     
     nav ul {
@@ -21,6 +24,7 @@
         position: absolute;
         top: .1rem;
         right: .5rem;
+        justify-content: flex-end;
     }
 
         
