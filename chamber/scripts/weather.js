@@ -40,7 +40,7 @@ function displayWeather(weatherData) {
     iconT.setAttribute('alt', "Icon that shows the status of the weather.")
     iconToday.appendChild(iconT);
 
-    weatherNowStatus.textContent = weatherData.list[4].weather[0].description;
+    weatherNowStatus.textContent = weatherData.list[2].weather[0].description;
 
     threeDaysWeather(weatherData.list[10], dayOne);
     threeDaysWeather(weatherData.list[18], dayTwo);
