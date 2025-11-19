@@ -42,9 +42,9 @@ function displayWeather(weatherData) {
 
     weatherNowStatus.textContent = weatherData.list[2].weather[0].description;
 
-    threeDaysWeather(weatherData.list[10], dayOne);
-    threeDaysWeather(weatherData.list[18], dayTwo);
-    threeDaysWeather(weatherData.list[26], dayThree);
+    threeDaysWeather(weatherData.list[9], dayOne);
+    threeDaysWeather(weatherData.list[17], dayTwo);
+    threeDaysWeather(weatherData.list[25], dayThree);
 
     function threeDaysWeather(data, dayElementContainer) {
         let date = new Date(data.dt * 1000);
