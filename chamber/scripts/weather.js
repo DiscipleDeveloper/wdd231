@@ -32,10 +32,13 @@ fetchWeatherData();
 
 function displayWeather(weatherData) {
     weatherSection.innerHTML = `${weatherData.list[2].main.temp}&degC`;
+    
     let iconImg = weatherData.list[2].weather[0].icon;
 
-    iconToday.setAttribute('src', `https://openweathermap.org/img/wn/${iconImg}@4x.png`)
-    iconToday.setAttribute('alt', "Icon that shows the status of the weather.")
+    let iconT = document.createElement("img");
+    iconT.setAttribute('src', `https://openweathermap.org/img/wn/${iconImg}@4x.png`)
+    iconT.setAttribute('alt', "Icon that shows the status of the weather.")
+    iconToday.appendChild(iconT);
 
     weatherNowStatus.textContent = weatherData.list[4].weather[0].description;
 

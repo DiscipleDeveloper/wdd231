@@ -386,6 +386,7 @@ h2 {
 #icon-today {
     width: 150px;
     height: auto;
+    margin: 0;
 }
 
 .spotlight {
