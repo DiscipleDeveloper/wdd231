@@ -202,3 +202,28 @@ section {
     text-align: center;
     margin-top: 1rem;
 }
+
+dialog {
+    height: 300px;
+    width: 400px;
+    background-color: var(--white-shade);
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.512);
+    padding: 1rem;
+    margin: 10rem auto;
+}
+
+::backdrop {
+    background-color: rgba(202, 189, 152, 0.189);
+}
+
+dialog button {
+    padding: 1rem;
+    margin:.5rem;
+    background-color: #999;
+    border-radius: 5px;
+}
+
+dialog button:hover {
+    background-color: white;
+}

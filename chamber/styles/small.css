@@ -424,3 +424,74 @@ h2 {
     border-radius: 5px;
     box-shadow: rgba(22, 19, 2, 0.643) 3px 3px 3px;
 }
+
+form {
+    padding: 1rem;
+}
+
+form label
+ {
+    display: block;
+    padding-top: 1rem;
+}
+
+form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form textarea,
+form input[type=submit] {
+    display: block;
+    padding: .4rem;
+    width: 96%;
+    max-width: 400px;
+}
+
+form input[type=submit] {
+    margin-top: 1rem;
+}
+
+form input[type=radio] {
+    margin-right: .4rem;
+}
+
+.join-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.animated-membership p {
+    text-align: center;
+}
+
+.gold {
+    background-color: #ffd700;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.silver {
+    background-color: #c0c0c0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.bronze {
+    background-color: #cd7f32;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.free {
+    background-color: #d1d5db;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}

@@ -78,6 +78,8 @@ const courses = [
     }
 ]
 
+const courseDialog = document.querySelector("#course-details");
+
 function createCourseCard(courses) {
     document.querySelector(".subject").innerHTML = "";
     courses.forEach(course => {
@@ -92,8 +94,31 @@ function createCourseCard(courses) {
             courseName.innerHTML += `<br><span style="color: #e01a4f;">Pending<span>`;
         }
 
+        card.addEventListener("click", () => {
+            createCourseDialog(course);
+        });
+
         card.appendChild(courseName);
         document.querySelector(".subject").appendChild(card);
+
+
+        // This function shows the dialog element of the HTML 
+        function createCourseDialog(course) {
+            courseDialog.innerHTML = "";
+            courseDialog.innerHTML = `
+        
+        <h2>${course.subject} ${course.number} ${course.title}</h2> 
+        <h3>Credits: ${course.credits}</h3>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        <button id="closeModal">❌</button>`;
+            courseDialog.showModal();
+
+            closeModal.addEventListener("click", () => {
+                courseDialog.close();
+            });
+        }
         
     });
 }
@@ -138,5 +163,14 @@ credits.innerHTML = `<p>The total credits of the courses listed below is ${total
 
 
 createCourseCard(courses)
+
+
+
+
+
+
+
+
+
 
 
