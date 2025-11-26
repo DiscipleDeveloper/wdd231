@@ -52,6 +52,7 @@ main {
 header {
     background-color: var(--primary-color);
     box-shadow: var(--yellow-shadow);
+    min-width: 300px;
 }
 
 .header-contents {
@@ -77,6 +78,10 @@ header button {
 
 .icon p {
     font-weight: 800;
+}
+
+nav {
+    min-width: 300px;
 }
 
 nav ul {
