@@ -464,8 +464,18 @@ form input[type=radio] {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
-.animated-membership p {
+.animated-membership p,
+.animated-membership h3 {
     text-align: center;
+}
+
+@keyframes bggold {
+    from {
+        background-color: #ffd700;
+    }
+    to {
+        background-color: #f0f264;
+    }
 }
 
 .gold {
@@ -473,13 +483,38 @@ form input[type=radio] {
     padding: 1.5rem;
     border-radius: 1rem;
     margin: 1rem;
+    position: relative;
+    animation: bggold 4s linear alternate infinite;
+    box-shadow: 0 0 5px 2px #ffd700;
 }
+
+@keyframes bgsilver {
+    from {
+        background-color: #c0c0c0;
+    }
+    to {
+        background-color: #f8f4f4;
+    }
+}
+
 
 .silver {
     background-color: #c0c0c0;
     padding: 1.5rem;
     border-radius: 1rem;
     margin: 1rem;
+    animation: bgsilver 6s linear alternate infinite;
+    box-shadow: 0 0 5px 2px #c0c0c0;
+}
+
+@keyframes bgbronze {
+    from {
+        background-color: #cd7f32;
+    }
+
+    to {
+        background-color: #edc195;
+    }
 }
 
 .bronze {
@@ -487,6 +522,17 @@ form input[type=radio] {
     padding: 1.5rem;
     border-radius: 1rem;
     margin: 1rem;
+    animation: bgbronze 8s linear alternate infinite;
+}
+
+@keyframes bgfree {
+    from {
+        background-color: #d1d5db;
+    }
+
+    to {
+        background-color: #ffffff;
+    }
 }
 
 .free {
@@ -494,4 +540,94 @@ form input[type=radio] {
     padding: 1.5rem;
     border-radius: 1rem;
     margin: 1rem;
+    animation: bgfree 12s linear alternate infinite;
+}
+
+.animated-membership button{
+    display: grid;
+    justify-self: center;
+    margin-top: 1rem;
+    padding: .6rem;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.41);
+}
+
+.animated-membership button:hover {
+    background-color: white;
+}
+
+dialog {
+    display: none;
+}
+
+dialog[open] {
+    position: relative;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+
+}
+
+dialog h2 {
+    margin: 1.2rem;
+}
+
+dialog li {
+    list-style: none;
+    margin-bottom: .5rem;
+}
+
+dialog button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: inherit;
+    border: none;
+}
+
+#gold-perk {
+    border: solid 5px #f7d704;
+    background-color: #f6e061;
+}
+
+#silver-perk {
+    border: solid 5px #aeadad;
+    background-color: #ede9e9;
+}
+
+#bronze-perk {
+    border: solid 5px #ba722b;
+    background-color: #fba754;
+}
+
+#gold-perk h2 {
+    color: #554601;
+}
+
+#silver-perk h2 {
+    color: #3a3939;
+}
+
+#bronze-perk h2 {
+    color: #3a1f03;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+#adv-form {
+    text-align: center;
+    height: 50vh;
+}
+
+.thanks-title {
+    text-align: center;
 }

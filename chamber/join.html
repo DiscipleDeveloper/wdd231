@@ -27,8 +27,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
 </head>
 
 <body>
@@ -56,17 +55,17 @@
     <h1>Join Us Page</h1>
     <div class="join-main">
         <form action="thankyou.html" method="get">
-            <label for="first-name">First Name:<input type="text" id="first-name" name="first-name" autocomplete="given-name" title="Enter your first name."></label>
-            <label for="last-name">Last Name:<input type="text" id="last-name" name="last-name" autocomplete="family-name" title="Enter your family name"></label>
+            <label for="first-name">*First Name:<input required type="text" id="first-name" name="first-name" autocomplete="given-name" title="Enter your first name."></label>
+            <label for="last-name">*Last Name:<input required type="text" id="last-name" name="last-name" autocomplete="family-name" title="Enter your family name"></label>
             <label for="org-title">Organizational Title:<input type="text" name="org-title" id="org-title" autocomplete="organization-title" pattern="^[A-Za-z- ]{7,}$" title="Enter the title of you organization"></label>
-            <label for="email">Email:<input type="email" id="email" name="email" autocomplete="email" placeholder="juan@email.com" title="Enter your email"></label>
-            <label for="phone-number">Phone No:<input type="tel" id="phone-number" name="phone-number" title="Enter your phone number" autocomplete="tel"></label>
-            <label for="business-name">Business Name:<input required type="text" name="business-name" id="business-name" autocomplete="organization" title="Enter business name"></label>
-            <div class="radio">Membership Level:</div>
-            <label for="gold"><input required type="radio" name="membership" id="gold">Gold</label>
-            <label for="silver"><input required type="radio" name="membership" id="silver">Silver</label>
-            <label for="bronze"><input required type="radio" name="membership" id="bronze">Bronze</label>
-            <label for="non-profit"><input required type="radio" name="membership" id="non-profit">Non Profit</label>
+            <label for="email">*Email Address:<input required type="email" id="email" name="email" autocomplete="email" placeholder="juan@email.com" title="Enter your email"></label>
+            <label for="phone-number">*Phone No:<input required type="tel" id="phone-number" name="phone-number" title="Enter your phone number" autocomplete="tel"></label>
+            <label for="business-name">*Business Name:<input required type="text" name="business-name" id="business-name" autocomplete="organization" title="Enter business name"></label>
+            <div class="radio">*Membership Level:</div>
+            <label for="gold"><input required type="radio" name="membership" id="gold" value="Gold">Gold</label>
+            <label for="silver"><input required type="radio" name="membership" id="silver" value="Silver">Silver</label>
+            <label for="bronze"><input required type="radio" name="membership" id="bronze" value="Bronze">Bronze</label>
+            <label for="non-profit"><input required type="radio" name="membership" id="non-profit" value="Non-Profit">Non Profit</label>
             <label for="business-description">Business Description:<textarea name="business-description" id="business-description"></textarea></label>
             <input type="hidden" id="timestamp" name="timestamp">
             <input type="submit" name="join" id="join" value="Join Us Now">     
@@ -75,19 +74,27 @@
         <div class="animated-membership">
             <section class="gold">
                 <h2>Gold Membership</h2>
-                <p>Perks and Priviledges</p>
+                <p>VIP Priviledges</p>
+                <h3>$100/month</h3>
+                <button id="gold-button">Learn More</button>
             </section>
             <section class="silver">
                 <h2>Silver Membership</h2>
-                <p>Perks and Priviledges</p>
+                <p>Premium Perks</p>
+                <h3>$50/month</h3>
+                <button id="silver-button">Learn More</button>
             </section>
             <section class="bronze">
                 <h2>Bronze Membership</h2>
-                <p>Perks and Priviledges</p>
+                <p>Good Advantage</p>
+                <h3>$10/month</h3>
+                <button id="bronze-button">Learn More</button>
             </section>
             <section class="free">
-                <h2>Free: Non-profit Organizations</h2>
+                <h2>Non-profit Organizations</h2>
                 <p>Perks</p>
+                <h3>Free</h3>
+                <button id="free-button">Learn More</button>
             </section>
         </div>
     </div>
@@ -115,6 +122,54 @@
             </div>
         </div>
     </footer>
+
+
+    <dialog id="gold-perk">
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+            <li>VIP: Frontrow seat in all events.</li>
+            <li>100% Recognition of your organization in all meetings.</li>
+            <li>1st Priority in networking parners.</li>
+            <li>First to get Business News and Opportunities.</li>
+            <li>Official meetings with Gold members in building parnerships.</li>
+            <li>Have a chance to give talks on special events.</li>
+            <li>Can Attend in all group meetings including Silver and Bronze member meetings.</li>
+            <li>A spotlight in the Chamber Website</li>
+        </ul>
+        <button id="goldX">🆇</button>
+    </dialog>
+
+    <dialog id="silver-perk">
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+            <li>50% Recognition of your organization in all meetings.</li>
+            <li>Big opportunity to communicate with networking partners.</li>
+            <li>Gets updated with Business News and Opportunities.</li>
+            <li>Can have meetings with Silver Members.</li>
+            <li>A spotlight in the Chamber Website.</li>
+        </ul>
+        <button id="silverX">🆇</button>
+    </dialog>
+
+    <dialog id="bronze-perk">
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+            <li>A chance for recognition in chamber meetings.</li>
+            <li>A chance to communicate with networking partners.</li>
+            <li>Have access to meet with Bronze Members.</li>
+        </ul>
+        <button id="bronzeX">🆇</button>
+    </dialog>
+
+    <dialog id="free-perk">
+        <h2>Free Non-Profit Membership</h2>
+        <ul>
+            <li>Attend Meetings.</li>
+            <li>Meet members of the Chamber.</li>
+        </ul>
+        <button id="freeX">🆇</button>
+    </dialog>
+
 </body>
 
 </html>
