@@ -177,6 +177,10 @@ footer {
     min-height: 1.3rem;
 }
 
+.join-button {
+    text-decoration: none;
+}
+
 #grid,
 #list {
     padding: .4rem 1rem;
