@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #E9B44C;
+    --secondary-color: #1C110A;
+    --primary-accent-color: #9B2915;
+    --seconday-accent-color: #E4D6A7;
+    --header-font: "DM Serif Text", serif;
+    --body-font: "Merriweather", serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+h1,
+h2 {
+    font-family: var(--header-font);
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: var(--body-font);
+}
+
+.desktop {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+}
+
+.mobile {
+    width: 45%;
+    max-width: 450px;
+    height: auto;
+}
+
+.icon {
+    width: 72px;
+    height: auto;
+}
+
+figcaption {
+    margin-bottom: 2rem;
+}
