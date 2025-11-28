@@ -51,7 +51,7 @@ p {
     height: auto;
 }
 
-figcaption {
+.caption {
     margin-bottom: 2rem;
 }
 
