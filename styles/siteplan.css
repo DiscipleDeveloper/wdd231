@@ -54,3 +54,8 @@ p {
 figcaption {
     margin-bottom: 2rem;
 }
+
+button {
+    color: var(--primary-accent-color);
+    background-color: var(--seconday-accent-color);
+}
