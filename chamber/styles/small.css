@@ -664,6 +664,8 @@ dialog button {
 
 .discover-cards img {
     border-radius: 7px;
+    width: 100%;
+    height: auto;
 }
 
 .discover-cards figure {
