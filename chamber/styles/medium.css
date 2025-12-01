@@ -4,6 +4,7 @@
             display: grid;
             min-width: 90%;
             padding: 1rem;
+            height: 370px;
             grid-template-areas:
                 "photo name"
                 "photo description"

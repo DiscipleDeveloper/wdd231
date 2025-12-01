@@ -651,6 +651,7 @@ dialog button {
     max-width: 370px;
     color: var(--dark-shade);
     background-color: var(--heading-color);
+    height: 500px;
 
 
     display: grid;
@@ -664,7 +665,7 @@ dialog button {
 
 .discover-cards img {
     border-radius: 7px;
-    width: 90%;
+    width: 270px;
     height: auto;
 }
 
