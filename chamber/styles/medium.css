@@ -12,6 +12,11 @@
         }
 
 
+        .discover-cards img {
+            height: 100%;
+            width: auto;
+        }
+
         .discover-cards figure {
             align-self: center;
             margin: auto .5rem;
