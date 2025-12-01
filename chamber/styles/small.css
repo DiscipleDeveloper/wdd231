@@ -640,3 +640,72 @@ dialog button {
 .thanks-title {
     text-align: center;
 }
+
+.discover-cards section {
+    margin: 2rem auto;
+    overflow: hidden;
+    text-align: center;
+    border: var(--primary-color) solid 2px;
+    border-radius: 1rem;
+    width: 95%;
+    max-width: 370px;
+    color: var(--dark-shade);
+    background-color: var(--heading-color);
+
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "address"
+    "button";
+}
+
+.discover-cards img {
+    border-radius: 7px;
+}
+
+.discover-cards figure {
+    width: 100%;
+    margin-bottom: 1rem;
+    
+    grid-area: photo;
+}
+
+.discover-cards h2 {
+    color: var(--primary-color);
+    margin: 1rem;
+    
+    grid-area: name;
+}
+
+.discover-cards address {
+    color: var(--white-shade);
+    margin-top: 1rem;
+
+    grid-area: address;
+}
+
+.discover-cards p {
+    color: var(--white-shade);
+    margin: 0 1rem;
+
+    grid-area: description;
+}
+
+.discover-cards button {
+    margin: 1.5rem;
+    padding: .7rem;
+    background-color: var(--accent-color);
+    border-radius: 9px;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.045);
+    color: var(--heading-color);
+    height: 52px;
+}
+
+.discover-cards button:hover {
+    background-color: var(--white-shade);
+    color: var(--dark-shade);
+}

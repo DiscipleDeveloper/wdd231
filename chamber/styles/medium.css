@@ -1,0 +1,49 @@
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .discover-cards section {
+            display: grid;
+            min-width: 90%;
+            padding: 1rem;
+            grid-template-areas:
+                "photo name"
+                "photo description"
+                "photo address"
+                "photo button";
+        }
+
+
+        .discover-cards figure {
+            align-self: center;
+            margin: ;
+            
+            grid-area: photo;
+        }
+    
+        .discover-cards h2 {
+            color: var(--primary-color);
+            
+    
+            grid-area: name;
+        }
+    
+        .discover-cards address {
+            color: var(--white-shade);
+            
+    
+            grid-area: address;
+        }
+    
+        .discover-cards p {
+            color: var(--white-shade);
+            
+    
+            grid-area: description;
+        }
+    
+        .discover-cards button {
+            justify-self: center;
+            width: 60%;
+            
+            grid-area: button;
+        }
+}
