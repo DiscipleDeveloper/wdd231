@@ -14,7 +14,7 @@
 
         .discover-cards figure {
             align-self: center;
-            margin: ;
+            margin: auto .5rem;
             
             grid-area: photo;
         }
