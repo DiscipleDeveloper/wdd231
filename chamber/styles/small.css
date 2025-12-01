@@ -709,3 +709,9 @@ dialog button {
     background-color: var(--white-shade);
     color: var(--dark-shade);
 }
+
+#discover-message {
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
