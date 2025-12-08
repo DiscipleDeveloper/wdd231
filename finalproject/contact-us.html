@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright English Speakers Tutorial Center</title>
+    <meta name="author" content="Napoleon B. Tumale">
+    <meta name="Description" content="Forms to contact the company">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/brightenglish.css">
+    <link rel="stylesheet" href="styles/brightenglish-large.css">
+    <script src="scripts/brightenglish.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body id="body">
+    <button aria-label="Open menu" id="menu"></button>
+    <header>
+        <nav>
+            <a class="logo" href="brightenglish.html">
+                <img src="images/bright-english-logo.svg" alt="Bright English Speakers Logo" height="35" width="40">
+                <p>Bright English Speakers<br><span id="tutor">Tutorial Center</span></p>
+            </a>
+            <ul>
+                <li><a class="a" href="brightenglish.html">Home</a></li>
+                <li><a class="a" id="wayfinding" href="contact-us.html">Contact Us</a></li>
+                <li><a class="a" href="pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero2.webp" media="(min-width: 580px)">
+                <img src="images/hero1.webp"
+                    alt="Classroom ambiance with board and chairs and tables. Or student with a teacher studying througn online."
+                    width="600" height="400">
+            </picture>
+            <h1>Contact Us</h1>
+        </section>
+
+        <section class="contact">
+            <form method="get" action="thanks.html" id="form">
+                <fieldset>
+                    <legend>Set a Schedule</legend>
+                    <label for="date">Date for Trial Class*<input type="date" name="date" id="date" required></label>
+                    <label for="time">Time
+                        <select required name="time" id="time">
+                            <option value="" disabled selected>Choose a time*</option>
+                        </select>
+                    </label>
+                    <div class="radio">Preferred Platform*</div>
+                    <label for="googlemeet"><input type="radio" id="googlemeet" value="googlemeet" name="platform"
+                            required>Google Meet</label>
+                    <label for="voov"><input type="radio" id="voov" value="voov" name="platform" required>Voov</label>
+                    <label for="zoom"><input type="radio" id="zoom" value="zoom" name="platform" required>Zoom</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name (Optional)<input type="text" name="name" id="name"
+                            placeholder="John Gomez"></label>
+                    <label for="age">Age (Optional)</label><input type="number" id="age" name="age">
+                    <label for="email">Email*<input type="email" id="email" name="email" required></label>
+                </fieldset>
+
+                <input type="submit" value="Get My Free Class">
+            </form>
+
+            <div class="contact-me">
+                <h2 id="quote">“Tell me and I forget. Teach me and I remember. Involve me and I learn.”<br>— Benjamin
+                    Franklin</h2>
+                <h3>Email</h3>
+                <p>napoleont14@gmail.com</p><br>
+                <h3>Hours of Operation</h3>
+                <p>10:00am - 11:00pm</p><br>
+                <h3>Our costumer service is waiting to assist you</h3>
+                <p>Please allow 1-Business day response time in order for us to fully address your inquiries.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>©<span id="yearNow"></span> ☀️ Bright English Speakers Tutorial Center ☀️<br>Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

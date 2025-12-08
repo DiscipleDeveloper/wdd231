@@ -1,0 +1,380 @@
+:root {
+    --headings: "DM Serif Text", serif;
+    --body-font: "Merriweather", serif;
+    --primary-color: #E9B44C;
+    --secondary-color: #1C110A;
+    --accent-color: #9B2915;
+    --accent-color2: #E4D6A7;
+    --shadow: 2px 2px 4px rgb(0, 0, 0);
+    --dark: #2e3a46;
+    --light: #dadada;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+
+}
+
+body {
+
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--secondary-color);
+}
+
+/* This Section is for all Navigation part including the logo, menu button, and list in the menu */
+
+
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: .99rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    box-shadow: 2px 2px 3px grey;
+}
+
+.logo p {
+    padding-top: 4px;
+}
+
+.tutor {
+    font-size: .7rem;
+}
+
+
+/* Button for Hamburger  */
+
+#menu {
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "ⅹ";
+}
+
+.open {
+    display: block;
+
+}
+
+.open a {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 3px grey;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav .a:hover {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+}
+
+#wayfinding {
+    color: var(--light);
+    background-color: var(--dark);
+    border-radius: 1rem;
+}
+
+/* -------------------------------------------------- */
+
+.hero {
+    padding-bottom: 8px;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.hero img {
+    height: auto;
+    box-shadow: var(--shadow);
+    max-width: 1099px;
+    width: 100%;
+    min-width: 425px;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--headings);
+    font-size: 2.7rem;
+    color: var(--primary-color);
+    text-shadow: var(--shadow);
+    background-color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+.s-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 4.5rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    font-family: var(--headings);
+    max-width: 500px;
+    color: var(--light);
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 220px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px grey;
+    border: none;
+    text-decoration: none;
+    color: var(--light);
+}
+
+#button:hover {
+    background-color: var(--accent-color2);
+    color: var(--dark);
+    box-shadow: 3px 3px 5px green;
+}
+
+.discount {
+    color: var(--primary-color);
+    font-family: var(--headings);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.cards {
+    color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch;
+    justify-items: center;
+    gap: .75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cards img {
+    margin: .4rem auto;
+    border-radius: 1rem;
+    height: 160px;
+    box-shadow: var(--shadow);
+    width: auto;
+}
+
+.cards section {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    max-width: 350px;
+}
+
+footer {
+    text-align: center;
+    border-top: rgb(182, 180, 180) solid .5px;
+    margin: 1.5rem;
+    padding: 1rem;
+    color: var(--light);
+    font-size: .8rem;
+}
+
+footer a {
+    color: var(--light);
+}
+
+/* ----------------------Form Design---------------------------- */
+form {
+    color: var(--primary-color);
+    font-size: .9rem;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--primary-color);
+    padding: .5rem 2%;
+    font-size: 1rem;
+    border-radius: 7px;
+    max-width: 470px;
+}
+
+legend {
+    color: var(--primary-color);
+    padding: 0 .5rem;
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+}
+
+form div {
+    padding-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+input[type="number"] {
+    border-radius: 7px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: .75rem;
+    border: solid 2px var(--primary-color);
+    appearance: none;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    border-radius: 7px;
+    border: none;
+    padding: .7rem;
+    max-width: 400px;
+    width: 96%;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: var(--shadow);
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent-color2);
+    color: white;
+    box-shadow: 3px 3px 5px green;
+}
+
+.contact {
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    color: var(--primary-color);
+}
+
+.contact-me {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5rem
+}
+
+.contact-me h2 {
+    margin: 0;
+}
+
+#quote {
+    margin: 0 auto 2rem auto;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border-radius: 7px;
+    text-shadow: var(--shadow);
+}
+
+/* thanks.html */
+.review,
+.thanks {
+    margin: 3rem auto;
+    max-width: 550px;
+    text-align: center;
+    width: 100%;
+}
+
+.thanks {
+    padding: 2rem;
+}
+
+.thanks span {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+
+/* Pricing */
+.pricing {
+
+    margin: 1rem;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-title {
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 7px;
+    color: var(--primary-color);
+    border: 1px solid grey;
+
+}
+
+.price-name {
+    color: var(--accent-color2);
+    font-size: 1.2rem;
+    margin: 8px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgb(13, 198, 13);
+}
+
+#plus {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    margin: 8px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgb(153, 12, 12);
+}

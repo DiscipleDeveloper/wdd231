@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright English Speakers Tutorial Center</title>
+    <meta name="author" content="Napoleon B. Tumale">
+    <meta name="Description" content="Shows Prices of the services">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/brightenglish.css">
+    <link rel="stylesheet" href="styles/brightenglish-large.css">
+    <script src="scripts/brightenglish.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body id="body">
+    <button aria-label="Open menu" id="menu"></button>
+    <header>
+        <nav>
+            <a class="logo" href="brightenglish.html">
+                <img src="images/bright-english-logo.svg" alt="Bright English Speakers Logo" height="35" width="40">
+                <p>Bright English Speakers<br><span id="tutor">Tutorial Center</span></p>
+            </a>
+            <ul>
+                <li><a class="a" href="brightenglish.html">Home</a></li>
+                <li><a class="a" href="contact-us.html">Contact Us</a></li>
+                <li><a class="a" id="wayfinding" href="pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero2.webp" media="(min-width: 580px)">
+                <img src="images/hero1.webp"
+                    alt="Classroom ambiance with board and chairs and tables. Or student with a teacher studying througn online."
+                    width="600" height="400">
+            </picture>
+            <h1>Pricing</h1>
+        </section>
+        <div class="pricing">
+            <div class="card-title">
+                <p class="price-name">Regular</p>
+                <p>50k VND/30 Minute Class</p>
+            </div>
+            <div class="card-title">
+                <p class="price-name">Discounted</p>
+                <p>1 Session = 30 30-minute Classes</p>
+                <p>-5% Discount</p>
+            </div>
+            <div class="card-title">
+                <p id="plus">Discounted Plus</p>
+                <p>1 Session Plus Referral</p>
+                <p>-5% + -5% Discount!</p>
+                <p>-5% Discount For Every Referral</p>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>©<span id="yearNow"></span> ☀️ Bright English Speakers Tutorial Center ☀️<br>Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

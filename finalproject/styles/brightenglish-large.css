@@ -1,0 +1,73 @@
+@media screen and (min-width: 584px) {
+
+
+
+    .logo {
+        box-shadow: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        box-shadow: var(--shadow);
+        width: 100%;
+        background-color: var(--primary-color);
+    }
+
+
+    nav {
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+
+    }
+
+
+    nav ul {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: .8rem;
+        right: 0;
+
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .s-button {
+
+        flex-direction: column;
+        gap: 1rem;
+        box-shadow: var(--shadow);
+        border-radius: 1rem;
+
+        margin: 3rem auto 0 auto;
+    }
+
+    .pricing,
+    .thanks,
+    .contact,
+    .hero,
+    .cards {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        box-shadow: none;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+
+    }
+}
