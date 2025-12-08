@@ -1,12 +1,12 @@
 :root {
     --headings: "DM Serif Text", serif;
     --body-font: "Merriweather", serif;
-    --primary-color: #E9B44C;
-    --secondary-color: #1C110A;
+    --primary-color: #1D63FF;
+    --secondary-color: #FFCE32;
     --accent-color: #9B2915;
-    --accent-color2: #E4D6A7;
-    --shadow: 2px 2px 4px rgb(0, 0, 0);
-    --dark: #2e3a46;
+    --accent-color2: #ebdf55;
+    --shadow: 2px 2px 4px rgba(0, 0, 0, 0.302);
+    --dark: #1d1dc5;
     --light: #dadada;
 }
 
@@ -19,11 +19,17 @@
 }
 
 body {
-
     margin: 0 auto;
     position: relative;
     background-color: var(--secondary-color);
+    min-width: 320px;
 }
+
+nav {
+    min-width: 320px;
+}
+
+
 
 /* This Section is for all Navigation part including the logo, menu button, and list in the menu */
 
@@ -57,7 +63,7 @@ body {
     top: 1rem;
     right: 1rem;
     border: none;
-    background-color: var(--primary-color);
+    background-color: #05205a;
     color: var(--secondary-color);
 
 }
@@ -79,10 +85,13 @@ body {
     display: block;
 }
 
+
+
 nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #05205a;
 
 }
 
@@ -91,7 +100,6 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-color);
     box-shadow: 2px 2px 3px grey;
 }
 
@@ -100,20 +108,20 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: #05205a;
     color: var(--secondary-color);
 }
 
 nav .a:hover {
     text-align: center;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--dark);
     border-radius: 6px;
 }
 
 #wayfinding {
-    color: var(--light);
-    background-color: var(--dark);
+    color: var(--dark);
+    background-color: var(--secondary-color);
     border-radius: 1rem;
 }
 
@@ -155,7 +163,7 @@ h1 {
     padding: 2rem;
     font-family: var(--headings);
     max-width: 500px;
-    color: var(--light);
+    color: var(--dark);
 }
 
 #button {
@@ -170,13 +178,13 @@ h1 {
     box-shadow: 1px 1px 3px grey;
     border: none;
     text-decoration: none;
-    color: var(--light);
+    color: white;
 }
 
 #button:hover {
     background-color: var(--accent-color2);
     color: var(--dark);
-    box-shadow: 3px 3px 5px green;
+    box-shadow: 3px 3px 5px var(--primary-color);
 }
 
 .discount {
@@ -190,8 +198,13 @@ h2 {
     margin-top: 4rem;
 }
 
-.cards {
+h3 {
     color: var(--primary-color);
+    margin-bottom: 6px;
+}
+
+.cards {
+    color: var(--dark);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: stretch;
@@ -222,17 +235,17 @@ footer {
     border-top: rgb(182, 180, 180) solid .5px;
     margin: 1.5rem;
     padding: 1rem;
-    color: var(--light);
+    color: var(--dark);
     font-size: .8rem;
 }
 
 footer a {
-    color: var(--light);
+    color: var(--dark);
 }
 
 /* ----------------------Form Design---------------------------- */
 form {
-    color: var(--primary-color);
+    color: var(--dark);
     font-size: .9rem;
 }
 
@@ -246,7 +259,7 @@ fieldset {
 }
 
 legend {
-    color: var(--primary-color);
+    color: var(--dark);
     padding: 0 .5rem;
 }
 
@@ -299,7 +312,8 @@ input[type="submit"]:hover {
     padding: 1.2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    color: var(--primary-color);
+    color: var(--dark);
+    margin-bottom: 1rem;
 }
 
 .contact-me {
@@ -308,7 +322,7 @@ input[type="submit"]:hover {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2.5rem
+    padding: 2.5rem;
 }
 
 .contact-me h2 {
@@ -358,17 +372,17 @@ input[type="submit"]:hover {
     padding: 1rem;
     box-shadow: var(--shadow);
     border-radius: 7px;
-    color: var(--primary-color);
-    border: 1px solid grey;
+    color: var(--dark);
+    
 
 }
 
 .price-name {
-    color: var(--accent-color2);
+    color: var(--primary-color);
     font-size: 1.2rem;
     margin: 8px;
     font-weight: 700;
-    text-shadow: 1px 1px 1px rgb(13, 198, 13);
+    text-shadow: 1px 1px 1px rgba(20, 5, 154, 0.753);
 }
 
 #plus {
