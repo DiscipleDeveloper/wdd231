@@ -92,6 +92,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     background-color: #05205a;
+    color: var(--secondary-color);
 
 }
 
