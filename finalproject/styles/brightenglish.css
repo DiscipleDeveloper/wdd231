@@ -370,6 +370,7 @@ input[type="submit"]:hover {
 
 .pricing div {
     min-width: 300px;
+    min-height: 500px;
 }
 
 .pricing div:hover {
