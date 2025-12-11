@@ -115,14 +115,15 @@ nav a {
 
 nav .a:hover {
     text-align: center;
-    background-color: var(--secondary-color);
+    background-image: linear-gradient(#f3e28f, #ebbc71);
     color: var(--dark);
-    border-radius: 6px;
+    border-radius: 1rem;
 }
 
 #wayfinding {
     color: var(--dark);
-    background-color: var(--secondary-color);
+    
+    background-image: linear-gradient(#e1d873, #FFCE32);
     border-radius: 1rem;
 }
 
