@@ -370,7 +370,10 @@ input[type="submit"]:hover {
 
 .pricing div {
     min-width: 300px;
-    min-height: 500px;
+    min-height: 260px;
+    display: grid;
+    align-content: center;
+    gap: .5rem;
 }
 
 .pricing div:hover {
