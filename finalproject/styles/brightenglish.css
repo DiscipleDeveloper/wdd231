@@ -362,10 +362,19 @@ input[type="submit"]:hover {
     margin: 1rem;
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
+}
+
+.pricing div {
+    min-width: 300px;
+}
+
+.pricing div:hover {
+    scale: 1.05;
+    cursor: pointer;
 }
 
 .card-title {
@@ -391,4 +400,84 @@ input[type="submit"]:hover {
     margin: 8px;
     font-weight: 700;
     text-shadow: 1px 1px 1px rgb(153, 12, 12);
+}
+
+.book-cards-parent {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1099px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+    
+}
+
+.book-cards-parent section {
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--dark);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.548);
+    border-radius: 1rem;
+    min-width: 320px;
+    min-height: 430px;
+}
+
+.book-cards-parent img {
+    display: grid;
+    justify-self: center;
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.547);
+}
+
+.book-cards-parent h2 {
+    margin-top: 0;
+}
+
+#gold,
+#gold-modal {
+    background-image: linear-gradient(#f2DE7A, #AE7C2B);
+}
+
+#silver,
+#silver-modal {
+    background-image: linear-gradient(#FFFFFF, #545353);
+}
+
+#bronze,
+#bronze-modal {
+    background-image: linear-gradient(#F2BA7A, #AE492B);
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.456);
+}
+
+dialog {
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: absolute;
+    top: 40%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+dialog button {
+    text-align: center;
+    margin-top: 2rem;
+    padding: .8rem;
+    width: 30%;
+    border-radius: 2rem;
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+dialog p {
+    margin-top: 1rem;
 }

@@ -1,0 +1,123 @@
+{
+    "books": [
+        {
+            "name": "Connectivity Foundations",
+            "description": "An introductory-level book that develops essential English skills using real-world themes and visual learning.",
+            "how_it_helps": "Helps learners build basic vocabulary, simple grammar, and confidence in foundational communication.",
+            "how_it_helps_vi": "Giúp người học xây dựng vốn từ vựng cơ bản, ngữ pháp đơn giản và sự tự tin trong giao tiếp nền tảng.",
+            "image": "images/conF.webp"
+        },
+        {
+            "name": "Connectivity Level 1",
+            "description": "Focuses on everyday communication with engaging digital and real-life topics.",
+            "how_it_helps": "Improves students’ listening, speaking, and reading readiness through guided practice.",
+            "how_it_helps_vi": "Cải thiện khả năng nghe, nói và đọc của học viên thông qua các bài luyện tập có hướng dẫn.",
+            "image": "images/con1.webp"
+        },
+        {
+            "name": "Connectivity Level 2",
+            "description": "Builds stronger grammar and vocabulary through contextualized activities.",
+            "how_it_helps": "Enhances the learner's ability to express ideas clearly in common situations.",
+            "how_it_helps_vi": "Nâng cao khả năng diễn đạt rõ ràng trong các tình huống quen thuộc.",
+            "image": "images/con2.webp"
+        },
+        {
+            "name": "Connectivity Level 3",
+            "description": "Introduces more complex language patterns and interactive tasks.",
+            "how_it_helps": "Develops intermediate communication skills needed for academic and workplace settings.",
+            "how_it_helps_vi": "Phát triển kỹ năng giao tiếp trung cấp cần thiết cho môi trường học thuật và nơi làm việc.",
+            "image": "images/con3.webp"
+        },
+        {
+            "name": "Connectivity Level 4",
+            "description": "Strengthens academic English using real-world problem-solving tasks.",
+            "how_it_helps": "Prepares learners for advanced reading, discussion, and structured writing.",
+            "how_it_helps_vi": "Chuẩn bị cho người học kỹ năng đọc nâng cao, thảo luận và viết theo cấu trúc.",
+            "image": "images/con4.webp"
+        },
+        {
+            "name": "Connectivity Level 5",
+            "description": "Advanced-level English integrating media, communication, and global topics.",
+            "how_it_helps": "Helps learners achieve higher fluency, professional communication, and analytical skills.",
+            "how_it_helps_vi": "Giúp người học đạt được độ lưu loát cao hơn, giao tiếp chuyên nghiệp và kỹ năng phân tích.",
+            "image": "images/con5.webp"
+        },
+        {
+            "name": "Pathways Foundations",
+            "description": "An introductory book focusing on basic reading skills, high-interest topics, and essential writing practice.",
+            "how_it_helps": "Builds early comprehension skills and helps learners form simple but meaningful written responses.",
+            "how_it_helps_vi": "Xây dựng kỹ năng hiểu bài cơ bản và giúp người học viết những câu trả lời đơn giản nhưng ý nghĩa.",
+            "image": "images/pathF.webp"
+        },
+        {
+            "name": "Pathways Level 1",
+            "description": "Introduces academic reading passages and structured writing models.",
+            "how_it_helps": "Strengthens reading comprehension and teaches students how to write clear, organized paragraphs.",
+            "how_it_helps_vi": "Tăng cường khả năng đọc hiểu và hướng dẫn học viên cách viết đoạn văn rõ ràng, có tổ chức.",
+            "image": "images/path1.webp"
+        },
+        {
+            "name": "Pathways Level 2",
+            "description": "Develops mid-level academic reading and writing skills with global and scientific topics.",
+            "how_it_helps": "Teaches learners how to summarize, infer, and develop more detailed written arguments.",
+            "how_it_helps_vi": "Dạy người học tóm tắt, suy luận và phát triển lập luận viết chi tiết hơn.",
+            "image": "images/path2.webp"
+        },
+        {
+            "name": "Pathways Level 3",
+            "description": "Presents longer, more complex reading texts and prepares learners for academic writing.",
+            "how_it_helps": "Enhances critical thinking and improves structured essay writing skills.",
+            "how_it_helps_vi": "Tăng cường tư duy phản biện và cải thiện kỹ năng viết bài luận theo cấu trúc.",
+            "image": "images/path3.webp"
+        },
+        {
+            "name": "Pathways Level 4",
+            "description": "Advanced academic textbook with research-based reading and analytical writing tasks.",
+            "how_it_helps": "Prepares students for university-level reading, argumentation, and formal essay writing.",
+            "how_it_helps_vi": "Chuẩn bị cho học viên kỹ năng đọc học thuật, lập luận và viết bài luận chính thức ở trình độ đại học.",
+            "image": "images/path4.webp"
+        },
+        {
+            "name": "Collins English for Exams: Listening",
+            "description": "A skills-based IELTS listening practice book with realistic test tasks.",
+            "how_it_helps": "Improves listening strategies, note-taking, and prediction skills required for the IELTS exam.",
+            "how_it_helps_vi": "Cải thiện chiến lược nghe, ghi chú và kỹ năng dự đoán cần thiết cho kỳ thi IELTS.",
+            "image": "images/listening.webp"
+        },
+        {
+            "name": "Collins English for Exams: Reading",
+            "description": "Focuses on IELTS reading task types and academic comprehension strategies.",
+            "how_it_helps": "Trains learners to identify keywords, skim, scan, and analyze long passages effectively.",
+            "how_it_helps_vi": "Rèn luyện học viên xác định từ khóa, đọc lướt, đọc tìm ý và phân tích các đoạn văn dài hiệu quả.",
+            "image": "images/reading.webp"
+        },
+        {
+            "name": "Collins English for Exams: Writing",
+            "description": "Covers Writing Task 1 and Task 2 with guided practice.",
+            "how_it_helps": "Helps learners write structured reports and essays using academic vocabulary and proper coherence.",
+            "how_it_helps_vi": "Giúp người học viết báo cáo và bài luận có cấu trúc với từ vựng học thuật và sự mạch lạc đúng chuẩn.",
+            "image": "images/writing.webp"
+        },
+        {
+            "name": "Collins English for Exams: Speaking",
+            "description": "A speaking guide that simulates IELTS interview scenarios.",
+            "how_it_helps": "Builds confidence, fluency, and the ability to speak clearly and naturally in exam situations.",
+            "how_it_helps_vi": "Xây dựng sự tự tin, độ lưu loát và khả năng nói tự nhiên, rõ ràng trong kỳ thi.",
+            "image": "images/speaking.webp"
+        },
+        {
+            "name": "Collins English for Exams: Vocabulary",
+            "description": "Teaches academic and topic-based vocabulary essential for IELTS.",
+            "how_it_helps": "Helps learners express ideas more precisely across all four IELTS skills.",
+            "how_it_helps_vi": "Giúp người học diễn đạt ý tưởng chính xác hơn trong cả bốn kỹ năng của IELTS.",
+            "image": "images/vocab.webp"
+        },
+        {
+            "name": "Collins English for Exams: Grammar",
+            "description": "Grammar-focused guide aligned with IELTS task types.",
+            "how_it_helps": "Improves grammatical accuracy and complexity needed for higher IELTS band scores.",
+            "how_it_helps_vi": "Cải thiện độ chính xác và mức độ phức tạp của ngữ pháp để đạt điểm IELTS cao hơn.",
+            "image": "images/grammar.webp"
+        }
+    ]
+}

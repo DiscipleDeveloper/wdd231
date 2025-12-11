@@ -1,3 +1,41 @@
+const getString = window.location.search;
+console.log(getString)
+
+const myInfo = new URLSearchParams(getString);
+console.log(myInfo);
+
+const schedName = document.querySelector("#sched-name");
+const schedDate = document.querySelector("#sched-date");
+const schedTime = document.querySelector("#sched-time");
+const schedEmail = document.querySelector("#sched-email");
+const schedAge = document.querySelector("#sched-age");
+const schedPlatform = document.querySelector("#sched-platform");
+
+
+schedName.textContent = `${myInfo.get('name')} `;
+schedDate.textContent = myInfo.get('date');
+schedTime.textContent = myInfo.get('time');
+schedEmail.textContent = myInfo.get('email');
+schedAge.textContent = myInfo.get('age');
+schedPlatform.textContent = myInfo.get('platform');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const savedValue = localStorage.getItem("platformUse")
 const thanksSection = document.querySelector(".thanks");
 
@@ -35,4 +73,3 @@ function displayPlatform(value) {
 }
 
 displayPlatform(savedValue)
-

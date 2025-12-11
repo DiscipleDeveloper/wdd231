@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/brightenglish-large.css">
 
     <script src="scripts/brightenglish.js" defer></script>
-    <script src="scripts/dialog-modals.js" defer></script>
+    <script src="scripts/async.js" type="module"></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -32,8 +32,8 @@
             <ul>
                 <li><a class="a" href="brightenglish.html">Home</a></li>
                 <li><a class="a" href="contact-us.html">Contact Us</a></li>
-                <li><a class="a" href="books.html">Books</a></li>
-                <li><a class="a" id="wayfinding" href="pricing.html">Pricing</a></li>
+                <li><a class="a" id="wayfinding" href="books.html">Books</a></li>
+                <li><a class="a" href="pricing.html">Pricing</a></li>
             </ul>
         </nav>
     </header>
@@ -45,53 +45,22 @@
                     alt="Classroom ambiance with board and chairs and tables. Or student with a teacher studying througn online."
                     width="300" height="200" fetchpriority="high">
             </picture>
-            <h1>Pricing</h1>
         </section>
-        <div class="pricing">
-            <div class="card-title"  id="bronze">
-                <p class="price-name">Regular</p>
-                <p>50k VND/30 Minute Class</p>
+        
+
+        <section>
+            <h1>Lesson Materials</h1>
+            <div id="book-cards-parent" class="book-cards-parent">
+                <!-- JavaScript Populated Elements -->
             </div>
-            <div class="card-title" id="silver">
-                <p class="price-name">Discounted</p>
-                <p>1 Session = 30 30-minute Classes</p>
-                <p>-5% Discount</p>
-            </div>
-            <div class="card-title" id="gold">
-                <p id="plus">Discounted Plus</p>
-                <p>1 Session Plus Referral</p>
-                <p>-5% + -5% Discount!</p>
-                <p>-5% Discount For Every Referral</p>
-            </div>
-        </div>
+        </section>
+
 
     </main>
     <footer>
         <p>©<span id="yearNow"></span> ☀️ Bright English Speakers Tutorial Center ☀️<br>Philippines</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-
-    <dialog id="bronze-modal">
-        <h2>Regular</h2>
-        <p>Learn and Improve English with our affordable offer!</p>
-        <button id="close-bronze">Close</button>
-    </dialog>
-
-    <dialog id="silver-modal">
-        <h2>Discounted</h2>
-        <p>Learn and Improve English with our affordable offer!</p>
-        <p>Save 75,000 VND Per 1 Session</p>
-        <button id="close-silver">Close</button>
-    </dialog>
-
-    <dialog id="gold-modal">
-        <h2>Discounted Plus</h2>
-        <p>Learn and Improve English with our affordable offer!</p>
-        <p>Save 75,000 VND Per 1 Session</p>
-        <p>Plus, another 75,000 VND Savings for every referral.</p>
-        <p>Add them up to get the best of savings.</p>
-        <button id="close-gold">Close</button>
-    </dialog>
 </body>
 
 </html>

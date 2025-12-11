@@ -14,7 +14,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/brightenglish.css">
     <link rel="stylesheet" href="styles/brightenglish-large.css">
+
     <script src="scripts/brightenglish.js" defer></script>
+    <script src="scripts/populate-select.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -30,6 +32,7 @@
             <ul>
                 <li><a class="a" href="brightenglish.html">Home</a></li>
                 <li><a class="a" id="wayfinding" href="contact-us.html">Contact Us</a></li>
+                <li><a class="a" href="books.html">Books</a></li>
                 <li><a class="a" href="pricing.html">Pricing</a></li>
             </ul>
         </nav>
@@ -46,28 +49,26 @@
         </section>
 
         <section class="contact">
-            <form method="get" action="thanks.html" id="form">
+            <form method="GET" action="thankyou.html" id="form">
                 <fieldset>
                     <legend>Set a Schedule</legend>
-                    <label for="date">Date for Trial Class*<input type="date" name="date" id="date" required></label>
-                    <label for="time">Time
-                        <select required name="time" id="time">
-                            <option value="" disabled selected>Choose a time*</option>
+                    <label>Date for Trial Class*<input type="date" name="date" id="date" required autocomplete="bday-day"></label>
+                    <label>Time
+                        <select required name="time" id="time" autocomplete="on">
+                            <option value="">Choose a time*</option>
                         </select>
                     </label>
                     <div class="radio">Preferred Platform*</div>
-                    <label for="googlemeet"><input type="radio" id="googlemeet" value="googlemeet" name="platform"
-                            required>Google Meet</label>
-                    <label for="voov"><input type="radio" id="voov" value="voov" name="platform" required>Voov</label>
-                    <label for="zoom"><input type="radio" id="zoom" value="zoom" name="platform" required>Zoom</label>
+                    <label><input type="radio" id="Googlemeet" value="googlemeet" name="platform" required>Google Meet</label>
+                    <label><input type="radio" id="voov" value="Voov" name="platform" required>Voov</label>
+                    <label><input type="radio" id="zoom" value="Zoom" name="platform" required>Zoom</label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label for="name">Name (Optional)<input type="text" name="name" id="name"
-                            placeholder="John Gomez"></label>
-                    <label for="age">Age (Optional)</label><input type="number" id="age" name="age">
-                    <label for="email">Email*<input type="email" id="email" name="email" required></label>
+                    <label>Name (Optional)<input type="text" name="name" id="name" placeholder="John Gomez" autocomplete="name"></label>
+                    <label>Age (Optional)<input type="number" id="age" name="age" autocomplete="on"></label>
+                    <label>Email*<input type="email" id="email" name="email" required autocomplete="email"></label>
                 </fieldset>
 
                 <input type="submit" value="Get My Free Class">
