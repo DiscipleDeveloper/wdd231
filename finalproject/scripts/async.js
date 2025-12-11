@@ -3,7 +3,7 @@ import { createBookCards } from "../data/create-cards.mjs";
 const bookCardParent = document.querySelector("#book-cards-parent");
 
 async function getBooksData() {
-    
+
     try {
         const response = await fetch("data/books.json");
 
@@ -13,7 +13,7 @@ async function getBooksData() {
 
         createBookCards(data.books, bookCardParent);
     }
-    
+
     catch (error) {
         console.error(error);
     }
