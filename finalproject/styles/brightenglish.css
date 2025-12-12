@@ -25,6 +25,10 @@ body {
     min-width: 320px;
 }
 
+header {
+    min-width: 320px;
+}
+
 nav {
     min-width: 320px;
 }
@@ -486,4 +490,8 @@ dialog h2 {
 
 dialog p {
     margin-top: 1rem;
+}
+
+.video-report {
+    font-size: 1.2rem;
 }
